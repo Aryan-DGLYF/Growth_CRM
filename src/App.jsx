@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Sidebar from "./Layouts/Sidebar";
 import Navbar from "./Layouts/Navbar";
-
+// import Dashboard from "./Merchant/Overview";
 
 
 import "./App.css";
