@@ -8,6 +8,11 @@ import Leads from "./pages/Merchant/Leads";
 import Contacts from "./pages/Merchant/Contacts.jsx";
 import ContactProfile from "./pages/Merchant/ContactProfile.jsx";
 import Companies from "./pages/Merchant/Companies.jsx";
+import Inbox from "./pages/Merchant/inbox";
+import Reports from "./pages/Merchant/Report";
+import Settings from "./pages/Merchant/Setting";
+// import Dashboard from "./Merchant/Overview";
+
 
 import "./App.css";
 
@@ -27,6 +32,9 @@ function MainLayout() {
             <Route path="/contacts/:id" element={<ContactProfile />} />
             <Route path="/companies" element={<Companies />} />
             {/* Add more routes for other pages here */}
+           <Route path="/inbox" element={<Inbox />} />
+           <Route path="/reports" element={<Reports />} />
+           <Route path="/settings" element={<Settings />} />
 
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
