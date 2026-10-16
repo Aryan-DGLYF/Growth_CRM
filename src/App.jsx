@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Sidebar from "./Layouts/Sidebar";
 import Navbar from "./Layouts/Navbar";
+import Inbox from "./pages/Merchant/inbox";
+import Reports from "./pages/Merchant/Report";
+import Settings from "./pages/Merchant/Setting";
 // import Dashboard from "./Merchant/Overview";
 
 
@@ -18,7 +21,9 @@ function MainLayout() {
 
         <main className="p-4 sm:p-6 lg:p-7">
           <Routes>
-           
+           <Route path="/inbox" element={<Inbox />} />
+           <Route path="/reports" element={<Reports />} />
+           <Route path="/settings" element={<Settings />} />
 
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
           </Routes>
