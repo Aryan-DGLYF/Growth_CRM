@@ -6,6 +6,11 @@ import Navbar from "./Layouts/Navbar";
 
 
 
+
+import Deals from "./pages/Merchant/Deals";
+import Tasks from "./pages/Merchant/Tasks";
+import Calendar from "./pages/Merchant/Calendar";
+
 import "./App.css";
 
 function MainLayout() {
@@ -18,6 +23,14 @@ function MainLayout() {
 
         <main className="p-4 sm:p-6 lg:p-7">
           <Routes>
+
+          
+          
+          
+          <Route path="/deals" element={<Deals />} />
+          <Route path="/tasks" element={<Tasks />} />
+          <Route path="/calendar" element={<Calendar />} />
+
            
 
             <Route path="*" element={<Navigate to="/dashboard" replace />} />
